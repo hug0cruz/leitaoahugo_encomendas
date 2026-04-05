@@ -17,7 +17,7 @@ def login():
     password = st.text_input("Password", type="password")
 
     if st.button("Entrar"):
-        if user == "leitao" and password == "admin":
+        if user == "leitao" and password == "leitao":
             st.session_state.logged_in = True
             st.success("Login feito")
             st.rerun()
